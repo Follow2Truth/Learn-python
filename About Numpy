@@ -1,0 +1,16 @@
+To import Numpy package:
+                        import numpy as np
+                        from numpy import *
+                        import numpy
+
+Numpy is different from list in various calculations like + , *. But they can all use a[0] form to call the elements
+
+Numpy use ([],[]) to show multi-dimensional arrays
+
+How to plot the data?
+      Use plot(),scatter()
+      Use figure(),subplot() to plot several figures together
+      
+Use legend() to add labels
+xlabel() yalbel(), title() to add some symbols to the figure.
+在脚本中使用plot()时，通常图像不会显示出来，需要添加show().
