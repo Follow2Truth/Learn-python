@@ -41,6 +41,8 @@ linspace(low,high,parts)返回low-high 分成parts份的list,arange(number)产�
 a.transpose()进行数组的转置。 ravel(),flatten()方法可以将多维数组转化成一维。
 shape()，reshape()可以修改数组的形状。
 
+07 numpy shapes finished.
+
 
 
 
