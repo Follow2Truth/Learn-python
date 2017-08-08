@@ -45,9 +45,11 @@ shape()，reshape()可以修改数组的形状。
 tostring()方法可以实现数组转换为string，fromstring从字符串中读出数据，不过要指定类型。a = np.fromstring(s, dtype=np.uint8) 
 对于文本文件，推荐使用loadtxt,genfromtxt,savetxt,对于二进制文件，推荐使用save,load,savez
 
+产生array的方法，1. arange(start,stop,step).2. linspace(start,stop,N)产生N个等间距分布在[start,stop]间元素组成的数组。3. logspace()产生N个对数
+等距分布的数组，默认以10 位底。3. meshgrid()用来在二维平面产生一个网格。4. identity()产生单位数组 5. ones() zeros()用来产生特定形状全是1或者0的数组。
+6. ogrid[start:end:step]用来产生以step为周期的数组。
 
-
-
+Get to 3-11 array creation.
 
 
 
