@@ -41,7 +41,11 @@ linspace(low,high,parts)返回low-high 分成parts份的list,arange(number)产�
 a.transpose()进行数组的转置。 ravel(),flatten()方法可以将多维数组转化成一维。
 shape()，reshape()可以修改数组的形状。
 
-07 numpy shapes finished.
+可以调用diagonal()方法查看数组的对角元素，然后也可以通过偏移查看次对角元素a.diagonal(offset =1),正数表示右移，负数表示左移
+tostring()方法可以实现数组转换为string，fromstring从字符串中读出数据，不过要指定类型。a = np.fromstring(s, dtype=np.uint8) 
+对于文本文件，推荐使用loadtxt,genfromtxt,savetxt,对于二进制文件，推荐使用save,load,savez
+
+
 
 
 
