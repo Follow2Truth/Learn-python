@@ -49,7 +49,14 @@ tostring()方法可以实现数组转换为string，fromstring从字符串中读
 等距分布的数组，默认以10 位底。3. meshgrid()用来在二维平面产生一个网格。4. identity()产生单位数组 5. ones() zeros()用来产生特定形状全是1或者0的数组。
 6. ogrid[start:end:step]用来产生以step为周期的数组。
 
-Get to 3-11 array creation.
+在Python中矩阵和数组是由不同命令创造的，矩阵可以用数组作为数据，由np.mat(A)创造。也可以用字符串作为数据，'1,0,0;0,1,0;0,0,1;'
+矩阵与向量相乘用*，矩阵的逆用A.I表示，矩阵指数表示矩阵连乘。
+
+使用numpy的vectorize可以将自己定义的函数向量化，产生的新的函数可以直接作用于向量，返回一个对应值的向量。
+数组与数组相乘*，表示对应元素相乘
+
+learnt 3-16 universal functions
+
 
 
 
