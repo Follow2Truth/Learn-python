@@ -55,7 +55,18 @@ tostring()方法可以实现数组转换为string，fromstring从字符串中读
 使用numpy的vectorize可以将自己定义的函数向量化，产生的新的函数可以直接作用于向量，返回一个对应值的向量。
 数组与数组相乘*，表示对应元素相乘
 
-learnt 3-16 universal functions
+np中的choose函数可以实现类似switch和case进行条件选择。
+
+numpy中，矩阵加减，如果两者维度不一样，它会根据两者的维度进行填充，自动将其拓展然后进行运算。
+
+数组的读写：1. 对于空格或者制表符分割的文本，可以先将数据转换成由列表组成的列表，再将列表转换为数组。或者直接用loadtxt
+           2. 对于逗号分割的文本(通常为.csv格式)， 可以用之前的方法，只不过需要将delimiter设置为‘,’
+           3. 对于csv格式的文件，使用csv包，利用里面的reader,writer
+           4. 写文件，利用savetxt()
+数组可以储存成二进制格式，单个的数组保存成.npy格式。多个数组保存成多个.npy文件组成的.npz格式，每个.npy文件包含一个数组。保存的方法有save(file,arr)
+savez(file,*args,**kws)无压缩的npz格式，savez_compressed(file,*args,**kws)有压缩的.npz格式。读的话直接用load
+
+learnt 3-19 reading and writing arrays.
 
 
 
