@@ -4,3 +4,11 @@ spatial(空间数据结构与算法), special(特殊方程), stats(统计分布�
 
 np.info(函数)用于查看函数的文档，np.lookfor("",module='')用于查找某个module里面包含关键词的函数。
 
+插值： interp1d---默认是线性插值，通过kind参数来调节使用的插值方法，nearest-最近邻插值，zero-0阶插值，linear-线性插值,quadratic-二次插值，cubic-三次
+插值。 径向基函数（Radial basis function）插值（Rbf）-----通过改变function来调节插值方法，multiquadric， gaussian, inverse_multiquadric.
+不同的Rbf结果不同。Rbf(x,y,z)还可以进行三维插值。
+
+统计： Numpy自带一些统计的方法--min,max,mean,std.此外，scipy的stats模块也有关于统计上的知识---nanmedian()，mode()，skew(),kurtosis().scipy中有很多
+stats的分布，包括均匀分布，正态分布，学生t分布，F分布，Gamma分布，伯努利分布，几何分布等。 关于正太分布，四类常用的函数--norm.cdf,norm.pdf, norm.rvs
+,norm.fit。from scipy.integrate import trapz可以导入积分函数。此外，关于离散分布，from scipy.stats import binom, poisson, randint.
+假设检验：导入相关的函数--正态分布，独立双样本t检验，配对样本t检验，单样本t检验，学生t分布。
