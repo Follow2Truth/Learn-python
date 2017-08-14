@@ -12,3 +12,7 @@ np.info(函数)用于查看函数的文档，np.lookfor("",module='')用于查�
 stats的分布，包括均匀分布，正态分布，学生t分布，F分布，Gamma分布，伯努利分布，几何分布等。 关于正太分布，四类常用的函数--norm.cdf,norm.pdf, norm.rvs
 ,norm.fit。from scipy.integrate import trapz可以导入积分函数。此外，关于离散分布，from scipy.stats import binom, poisson, randint.
 假设检验：导入相关的函数--正态分布，独立双样本t检验，配对样本t检验，单样本t检验，学生t分布。
+
+拟合：from numpy import polyfit,poly1d-- 多项式拟合函数，可以改变阶数。 scipy.linalg.lstsq--用来求出最小二乘解。scipy.stats.linregress线性回归，
+也是用来线性拟合的函数。from scipy.optimize import leastsq--更高级的拟合,可以自己定义一个用来拟合的函数以及误差函数 scipy.optimize.curvefit--不需
+要定义误差函数，直接传入自己定义的function作为参数。
