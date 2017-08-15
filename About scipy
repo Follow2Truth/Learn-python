@@ -20,3 +20,12 @@ stats的分布，包括均匀分布，正态分布，学生t分布，F分布，G
 优化：scipy.optimize.minimize--接受三个参数：第一个是要优化的函数，第二个是初始猜测值，第三个则是优化函数的附加参数，
 默认 minimize 将优化函数的第一个参数作为优化变量，所以第三个参数输入的附加参数从优化函数的第二个参数开始。minimize可以利用
 'BFGS', 'L-BFGS-B', 'SLSQP','nelder-mead','powell' 中的一种算法。默认是BFGS. rosenbrock--是一个用来测试优化函数效果的一个非凸函数。
+
+符号积分：先导入init_printing模块方便显示，利用sympy.symbols来定义符号变量，再用sympy定义表达式，然后可以直接对表达式积分sympy.integrate。
+数值积分：1. from scipy.integrate import quad, 可以在某一区间积分，也可以积分到无穷。2. 双重积分则需要调用quad函数两次。2. 利用
+scipy.integrate.trapz或者simps进行采样点积分。
+
+解微分方程：1.积分求解 from scipy.integrate import odeint. 先定义函数，然后积分求解。2. 高阶微分方程得利用降阶求解。
+
+稀疏矩阵：scipy.sparse. 有各种各样的类型，coo_matrix--a sparse matrix in coordinate format. csc_matrix--compressed sparse column matrix
+
