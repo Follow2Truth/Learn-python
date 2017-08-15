@@ -16,3 +16,7 @@ stats的分布，包括均匀分布，正态分布，学生t分布，F分布，G
 拟合：from numpy import polyfit,poly1d-- 多项式拟合函数，可以改变阶数。 scipy.linalg.lstsq--用来求出最小二乘解。scipy.stats.linregress线性回归，
 也是用来线性拟合的函数。from scipy.optimize import leastsq--更高级的拟合,可以自己定义一个用来拟合的函数以及误差函数 scipy.optimize.curvefit--不需
 要定义误差函数，直接传入自己定义的function作为参数。
+
+优化：scipy.optimize.minimize--接受三个参数：第一个是要优化的函数，第二个是初始猜测值，第三个则是优化函数的附加参数，
+默认 minimize 将优化函数的第一个参数作为优化变量，所以第三个参数输入的附加参数从优化函数的第二个参数开始。minimize可以利用
+'BFGS', 'L-BFGS-B', 'SLSQP','nelder-mead','powell' 中的一种算法。默认是BFGS. rosenbrock--是一个用来测试优化函数效果的一个非凸函数。
