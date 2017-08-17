@@ -29,3 +29,7 @@ scipy.integrate.trapz或者simps进行采样点积分。
 
 稀疏矩阵：scipy.sparse. 有各种各样的类型，coo_matrix--a sparse matrix in coordinate format. csc_matrix--compressed sparse column matrix
 
+线性代数： scipy.linalg. 一般用numpy.ndarray来表示矩阵。然后：linalg.inv()可以用来求逆。 linalg.solve()用来解方程组，linalg.det()求解行列式， 
+linalg.norm()可以用来计算矩阵或者向量的模， linalg.eig()用来计算矩阵的特征向量和特征值，linalg.lu()对矩阵进行LU分解,linalg.cholesky()cholesky
+分解， 
+
