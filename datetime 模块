@@ -1,0 +1,23 @@
+import datetime as dt
+datetime提供了基础时间和日期的处理。
+date对象：可以使用date(year,month,day)产生一个date对象，两个date对象相减得到其相差多久。
+time对象：可以使用time(hour,min,seconds,us)产生一个time对象。
+可以使用datetime(year,month,day,hour,min,seconds,us)产生一个datetime的对象。
+datetime可以格式化输出，其格式要求：
+%a	星期英文缩写
+%A	星期英文
+%w	一星期的第几天，[0(sun),6]
+%b	月份英文缩写
+%B	月份英文
+%d	日期，[01,31]
+%H	小时，[00,23]
+%I	小时，[01,12]
+%j	一年的第几天，[001,366]
+%m	月份，[01,12]
+%M	分钟，[00,59]
+%p	AM 和 PM
+%S	秒钟，[00,61] （大概是有闰秒的存在）
+%U	一年中的第几个星期，星期日为第一天，[00,53]
+%W	一年中的第几个星期，星期一为第一天，[00,53]
+%y	没有世纪的年份
+%Y	完整的年份
