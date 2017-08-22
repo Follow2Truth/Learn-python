@@ -1,0 +1,13 @@
+Create/acquire some resource
+try do something with the resource
+finally destroy or release the resource
+
+with语句的用法
+with <expression>:
+    <block>
+<expression>执行的结果应当返回一个实现了上下文管理器的对象，即实现这样两个方法，__enter__和__exit__.
+
+上下文管理器对象的__enter__方法如果添加了返回值，可以使用as将这个返回值传给某个参数。
+
+上下文管理器将错误处理交给__exit__进行，可以将错误类型，错误值和trace back等内容作为参数传给__exit__函数
+
