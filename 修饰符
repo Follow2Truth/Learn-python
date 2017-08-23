@@ -4,5 +4,11 @@
 
 可以用@来使用修饰符。使用@符号来将某个函数替换为修饰符之后的函数。
 
+@classmethod放在类中某个方法定义前，用来将一个对象方法转化为类方法，然后可以通过类名.方法进行调用
+@property为了使Python实现像Java中的getters和setters的方法，在一个方法前加上@property用来查看数据，此时不需要加括号，相当于属性，但只可以读，如果要写，
+@x.setter另外再定义一个方法
+
+numpy中@vectorize可以将一个函数转换为ufunc。
+
 
 
