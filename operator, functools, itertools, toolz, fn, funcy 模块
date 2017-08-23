@@ -1,0 +1,15 @@
+import operator as op
+operator模块中有各种运算符的函数版。op.mul,op.add,op.itemgetter
+functools模块中有各种与函数有关的工具，reduce-做接连运算,partial-使用一个函数生成一个新的函数
+sum_ = partial(reduce,op.add)
+
+itertools模块中包含很多与迭代器相关的工具，常用的有排列组合生成器permutations和combinations，还有groupby生成器。
+
+
+
+
+
+
+
+
+
