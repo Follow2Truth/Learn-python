@@ -1,0 +1,10 @@
+imprort matplotlib.pyplot as plt
+plt.plot(x1,y1,format_str，x2,y2，。。。)可以没有x，这时默认为x=0,N-1
+
+plt.axis(xmin,xmax,ymin,ymax)用来限制x,y坐标轴显示的范围。
+关于线条属性也是可以改变的，例如linewidth和color等
+可以用line.setp()来修改线条属性。
+
+关于画子图，用subplot()
+plt.hist()用来画直方图。
+
