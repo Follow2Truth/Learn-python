@@ -8,3 +8,15 @@ plt.axis(xmin,xmax,ymin,ymax)用来限制x,y坐标轴显示的范围。
 关于画子图，用subplot()
 plt.hist()用来画直方图。
 
+可以在matplotlib 的配置文件夹 mpl_configdir 的子文件夹 mpl_configdir/stylelib/ 下中存放自定义风格文件，以 .mplstyle 结尾。
+mpl_configdir 的位置可以这样查看：import matplotlib
+                                matplotlib.get_configdir()
+里面的内容以 属性：值 的形式保存：
+axes.titlesize : 24
+axes.labelsize : 20
+lines.linewidth : 3
+lines.markersize : 10
+xtick.labelsize : 16
+ytick.labelsize : 16
+假设我们将其保存为 mpl_configdir/stylelib/presentation.mplstyle，那么使用这个风格的时候只需要调用：
+plt.style.use('presentation')
