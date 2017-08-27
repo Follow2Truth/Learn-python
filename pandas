@@ -1,0 +1,18 @@
+pandas是python data analysis library
+import pandas as pd
+pandas有三种基本结构：Series-1 D labeled homogeneously-typed array
+                    DataFrame-General 2 D labeled,size-mutable tabular structure with potentially heterogeneous-typed columns
+                    Panel- General 3 D labeled, also size-mutable array
+一维series可以用一维列表初始化，s=pd.Series([1,2,3,4])
+DataFrame二维结构，f=pd.DataFrame(列表中填入的内容（二维数组），index,columns)，也可以用字典的形式传入数据
+DataFrame 只要求每一列数据的格式相同
+head,tail可以用来查看前面几行和最后面几行的数据。index,columns,values可以查看下标，列标和数据的值
+统计数据：describe()可以返回统计方面的信息。.T可以将数据转置。sort_index（axis=0,ascending=True）用来按照下标排序。
+sort_values(by=某行某列）可以按照by的值的大小排序。
+至于索引，可以用.loc，.iloc, .ix等方法进行索引。
+要修改某一个值，可以用at或者iat
+可以对pandas定义的数据进行统计运算，apply操作-接收一个函数，返回是将函数作用到每个列上。
+关于合并，可以使用pandas 的concata将多个pandas对象进行连接，也可以使用merge，append,groupby()
+
+
+写入文件-.to_csv(),从文件中读取，read_csv(),还有写入hdf5，以及excel等文件的方式
