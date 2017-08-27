@@ -20,3 +20,16 @@ xtick.labelsize : 16
 ytick.labelsize : 16
 假设我们将其保存为 mpl_configdir/stylelib/presentation.mplstyle，那么使用这个风格的时候只需要调用：
 plt.style.use('presentation')
+
+在 matplotlib.pyplot 中，基础的文本函数如下：
+text() 在 Axes 对象的任意位置添加文本
+xlabel() 添加 x 轴标题
+ylabel() 添加 y 轴标题
+title() 给 Axes 对象添加标题
+figtext() 在 Figure 对象的任意位置添加文本
+suptitle() 给 Figure 对象添加标题
+anotate() 给 Axes 对象添加注释（可选择是否添加箭头标记）
+text() 函数在 Axes 对象的指定位置添加文本，
+而 annotate() 则是对某一点添加注释文本，需要考虑两个位置：一是注释点的坐标 xy ，二是注释文本的位置坐标 xytext：
+
+
