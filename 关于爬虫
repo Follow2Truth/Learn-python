@@ -1,0 +1,64 @@
+第一部分： 有关http协议
+Request URL:https://zhuanlan.zhihu.com/p/25296437
+
+Request Method:GET请求方法用的是GET,常用的还有POST,HEAD
+
+Status Code:200 OK. 对应HTTP协议中的状态码,我们这次返回的是200 OK
+所有HTTP响应的第一行都是状态行，依次是当前HTTP版本号，3位数字组成的状态代码，以及描述状态的短语，彼此由空格分隔。 
+状态代码的第一个数字代表当前响应的类型：
+1xx消息——请求已被服务器接收，继续处理
+2xx成功——请求已成功被服务器接收、理解、并接受
+3xx重定向——需要后续操作才能完成这一请求
+4xx请求错误——请求含有词法错误或者无法被执行
+5xx服务器错误——服务器在处理某个正确请求时发生错误
+常见状态代码、状态描述、说明：
+200 OK //请求成功
+400 Bad Request //客户端请求有语法错误，不能被服务器所理解
+401 Unauthorized //请求未经授权，这个状态代码必须和WWW-Authenticate报头域一起使用
+403 Forbidden //服务器收到请求，但是拒绝提供服务
+404 Not Found //请求资源不存在，eg：输入了错误的URL
+500 Internal Server Error //服务器发生不可预期的错误
+503 Server Unavailable //服务器当前不能处理客户端的请求，一段时间后可能恢复正常
+
+Accept:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept请求报头域用于指定客户端接受哪些类型的信息。
+
+Cookie:d_c0="AACAWNtZswqPTnJ8dFXqaygiq82ekPD5_-xxxx
+Cookie（复数形态Cookies），中文名称为“小型文本文件”或“小甜饼”[1]，
+指某些网站为了辨别用户身份而储存在用户本地终端（Client Side）上的数据（通常经过加密）。
+
+User-Agent:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36
+用户是通过什么工具来请求的
+
+Referer:https://www.zhihu.com/people/pa-chong-21/activities
+是通过哪个页面到当前页面的
+
+一个小技巧：找到你下载的目录后，按住shift不放，然后空白处右键，会多出来一个在此处打开命令窗口，不用再慢慢的cd过来
+
+关于Jupiter notebook入门知识。
+在命令行窗口，输入jupyter notebook就会带你进入那个窗口，在new下面选择使用python,然后新建文件夹，输入代码，
+按shift+enter即可进行运行，然后可以添加标题，可以对之前代码修改，重按shift enter 重新运行。
+高级单元格操作，将让编写 notebook 变得更加方便。举例如下：
+
+如果想删除某个单元格，可以选择该单元格，然后依次点击Edit -> Delete Cell；
+如果想移动某个单元格，只需要依次点击Edit -> Move cell [up | down]；
+如果想剪贴某个单元测，可以先点击Edit -> Cut Cell，然后在点击Edit -> Paste Cell [Above | Below]；
+如果你的 notebook 中有很多单元格只需要执行一次，或者想一次性执行大段代码，那么可以选择合并这些单元格。点击Edit -> Merge Cell [Above | below]。
+我们再来看看 Markdown 单元格。虽然它的类型是 markdown，
+但是这类单元格也接受 HTML 代码。这样，你就可以在单元格类实现更加丰富的样式，添加图片，等等。
+另外，markdown 单元格还支持 LaTex 语法。notebook 还有一个强大的特性，就是其导出功能。可以将 notebook 导出为多种格式：
+HTML
+Markdown
+ReST
+PDF（通过 LaTeX）
+Raw Python
+导出 PDF 功能，可以让你不用写 LaTex 即可创建漂亮的 PDF 文档。
+你还可以将 notebook 作为网页发布在你的网站上。甚至，你可以导出为 ReST 格式，作为软件库的文档。
+
+
+
+
+
+
+
+
